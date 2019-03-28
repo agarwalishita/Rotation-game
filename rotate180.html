@@ -1,0 +1,95 @@
+<html>
+<head>
+   <title>Rotate image using JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="rotate.css">
+</head>
+<body>
+  <div class="topnav">
+  <a href="index.html">Index</a>
+  <a href="rotate90.html">Rotate 90°</a>
+  <a href="rotate120.html">Rotate 120°</a>
+  <a href="rotate180.html">Rotate 180°</a>
+  <a href="credits.html">Credits</a>
+</div>
+	<center>
+    <h1><font color="blue">Click on the button to rotate the images 180 degrees clock wise.</font></h1></center>
+	<div class="wrapper">
+  	  <div class="box a">
+  	  	<img src="toy.png" alt="toy" style="width:100%">
+  	  </div>
+	  <div class="box b">
+	  <img src="3.png" alt="toy" style="width:100%">
+		</div>
+    <div class="box c">
+    <img src="game.png" alt="toy" style="width:100%">
+    </div>
+    <div class="box c">
+    <img src="shape.png" alt="toy" style="width:100%">
+    </div>
+    <div class="box c">
+    <img src="cir2.png" alt="toy" style="width:100%">
+    </div>
+    <div class="box c">
+    <img src="cir.png" alt="toy" style="width:100%">
+    </div>
+    
+	  <div class="box d">
+	  	<img src="toy.png" alt="toy" style="width:100%" id="toy">
+	  </div>
+	  <div class="box e">
+	    <img src="3.png" alt="toy" style="width:100%" id="1">
+	  </div>
+    <div class="box f">
+      <img src="game.png" alt="toy" style="width:100%" id="3">
+    </div>
+    <div class="box f">
+      <img src="shape.png" alt="toy" style="width:100%" id="4">
+    </div>
+    <div class="box f">
+      <img src="cir2.png" alt="toy" style="width:100%" id="6">
+    </div>
+    <div class="box f">
+      <img src="cir.png" alt="toy" style="width:100%" id="5">
+    </div>
+    
+	</div>
+  <center>
+	<button onclick="rotateImage()" class="button">ROTATE</button></center>
+    <p id="q"></p>
+    <input type="text" id="myText" value="">
+	  <h2>Click the Submit button to verify.</h2>
+    <button onclick="myFunction()" class="button">Submit</button>
+    <p id="demo" class="demo"></p>
+
+</body>
+<script>
+    function rotateImage() {
+        var img = document.getElementById('toy');
+        img.style.transform = 'rotate(180deg)';
+        var img = document.getElementById('1');
+        img.style.transform = 'rotate(180deg)';
+        var img = document.getElementById('3');
+        img.style.transform = 'rotate(180deg)';
+        var img = document.getElementById('4');
+        img.style.transform = 'rotate(180deg)';
+        var img = document.getElementById('5');
+        img.style.transform = 'rotate(180deg)';
+        var img = document.getElementById('6');
+        img.style.transform = 'rotate(180deg)';
+        document.getElementById("q").innerHTML='<h2>How many images look same?</h2>' ;
+      }
+       function myFunction() {
+        var comment;
+      var x = document.getElementById("myText").value;
+      if(x==3){
+        comment="Excellent, you made it."
+      }
+      else{
+        comment="Oops, Try Again!"
+      }
+
+      document.getElementById("demo").innerHTML = comment;
+    }
+
+</script>
+</html>

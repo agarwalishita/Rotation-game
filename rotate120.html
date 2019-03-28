@@ -4,8 +4,15 @@
   <link rel="stylesheet" type="text/css" href="rotate.css">
 </head>
 <body>
+  <div class="topnav">
+  <a href="index.html">Index</a>
+  <a href="rotate90.html">Rotate 90°</a>
+  <a href="rotate120.html">Rotate 120°</a>
+  <a href="rotate180.html">Rotate 180°</a>
+  <a href="credits.html">Credits</a>
+</div>
 	<center>
-    <h1><font color="blue">Click on the button to rotate the images 180 degrees clock wise.</font></h1></center>
+    <h1><font color="blue">Click on the button to rotate the images 120 degrees clock wise.</font></h1></center>
 	<div class="wrapper">
   	  <div class="box a">
   	  	<img src="toy.png" alt="toy" style="width:100%">
@@ -58,23 +65,23 @@
 <script>
     function rotateImage() {
         var img = document.getElementById('toy');
-        img.style.transform = 'rotate(180deg)';
+        img.style.transform = 'rotate(120deg)';
         var img = document.getElementById('1');
-        img.style.transform = 'rotate(180deg)';
+        img.style.transform = 'rotate(120deg)';
         var img = document.getElementById('3');
-        img.style.transform = 'rotate(180deg)';
+        img.style.transform = 'rotate(120deg)';
         var img = document.getElementById('4');
-        img.style.transform = 'rotate(180deg)';
+        img.style.transform = 'rotate(120deg)';
         var img = document.getElementById('5');
-        img.style.transform = 'rotate(180deg)';
+        img.style.transform = 'rotate(120deg)';
         var img = document.getElementById('6');
-        img.style.transform = 'rotate(180deg)';
-        document.getElementById("q").innerHTML='<h2>How many images are same?</h2>' ;
+        img.style.transform = 'rotate(120deg)';
+        document.getElementById("q").innerHTML='<h2>How many images look same?</h2>' ;
       }
        function myFunction() {
         var comment;
       var x = document.getElementById("myText").value;
-      if(x==3){
+      if(x==1){
         comment="Excellent, you made it."
       }
       else{
